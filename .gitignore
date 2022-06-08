@@ -127,3 +127,24 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Output files
+*.npy
+*.out
+*.debug
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.bsp
+*.csv
+Plots_*
+
+# DyLAN runtime files
+config/
+
+# Need to update files
+need_to_update/
+
+# Files I don't understand why they exist
+fort.1
