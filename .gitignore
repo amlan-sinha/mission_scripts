@@ -139,6 +139,7 @@ dmypy.json
 *.bsp
 *.csv
 Plots_*
+result/
 
 # DyLAN runtime files
 config/
