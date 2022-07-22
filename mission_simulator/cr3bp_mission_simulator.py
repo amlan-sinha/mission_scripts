@@ -105,12 +105,8 @@ class CR3BPResonantMissionSimulator:
         moon = pydylan.Body("Moon")
 
         cr3bp = pydylan.eom.CR3BP(primary=earth, secondary=moon)
-
         self.eom = cr3bp
         
-        libration_point_information = cr3bp.find_equilibrium_point(pydylan.enum.LibrationPoint.L1)
-        desired_orbit_energy = libration_point_information[1] + 100E-4
-
         r1_options = pydylan.periodic_orbit.ResonanceOptions()
         r1_options.p, r1_options.q = 2, 3
         r1_options.x, r1_options.z, r1_options.zdot = 0.5, 0., 0.
